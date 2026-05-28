@@ -20,7 +20,7 @@ The total number of dengue cases reported in 2023 was calculated using the `sum(
 ## R Code
 
 ```r
-Suman <- read.csv(file.choose(), header = TRUE)
+Suman <- read.csv("dengue_assignment.csv", header = TRUE)
 
 total_2023 <- sum(Suman$case_number[Suman$year == 2023])
 
