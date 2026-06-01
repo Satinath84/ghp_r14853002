@@ -1,11 +1,10 @@
-# External packages used
-# No external packages required
+setwd("/Users/satinathchandrasarker/Downloads")
+dengue<- read.csv("dengue_assignment.csv",header = TRUE)
+library(readr)
+library(dplyr)
 
 # Import dataset
-Suman <- read.csv("dengue_assignment.csv", header = TRUE)
+dengue <- read.csv("dengue_assignment.csv", header = TRUE)
 
 # Calculate total dengue cases in 2023
 total_2023 <- sum(Suman$case_number[Suman$year == 2023])
-
-# Print result
-total_2023
