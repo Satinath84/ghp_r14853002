@@ -8,8 +8,8 @@ How many new dengue cases were reported in 2023 in Taiwan?
 - RStudio
 
 ## External Packages
--readr
--dplyr
+- readr 
+- dplyr
 
 ## Data Source
 Open dengue dataset from Taiwan CDC.
