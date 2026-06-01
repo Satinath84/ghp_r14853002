@@ -8,7 +8,8 @@ How many new dengue cases were reported in 2023 in Taiwan?
 - RStudio
 
 ## External Packages
-No external packages were required.
+library(readr)
+library(dplyr)
 
 ## Data Source
 Open dengue dataset from Taiwan CDC.
@@ -19,13 +20,17 @@ The total number of dengue cases reported in 2023 was calculated using the `sum(
 
 ## R Code
 
-```r
-Suman <- read.csv("dengue_assignment.csv", header = TRUE)
+setwd("/Users/satinathchandrasarker/Downloads")
+dengue<- read.csv("dengue_assignment.csv",header = TRUE)
+library(readr)
+library(dplyr)
 
-total_2023 <- sum(Suman$case_number[Suman$year == 2023])
+# Import dataset
+dengue <- read.csv("dengue_assignment.csv", header = TRUE)
 
-total_2023
-```
+# Calculate total dengue cases in 2023
+total_2023 <- sum(dengue$case_number[dengue$year == 2023])
+
 
 ## Result
 
